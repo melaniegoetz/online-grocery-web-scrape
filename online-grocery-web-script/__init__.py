@@ -1,18 +1,12 @@
 #import the library used to query a website
-import urllib2
 
 from selenium import webdriver
 
+
 browser = webdriver.Chrome(executable_path=r"../chromedriver")
-browser.get("http://www.publix.com/product-catalog/productlisting?ch=9.13.&page=1&count=96")
-
-
 #Specify the url
 ## NOTE: MUST DO THIS FOR EVERY PRODUCT PAGE (96 at a time)
-linkToLoad = "http://www.publix.com/pd/ritz-crackers/RIO-PCI-145295?ch=9.13."
-
-# f = opener.open(wiki)
-page = urllib2.urlopen(linkToLoad)
+browser.get("http://www.publix.com/product-catalog/productlisting?ch=9.13.&page=1&count=96")
 
 browser.implicitly_wait(3)
 
