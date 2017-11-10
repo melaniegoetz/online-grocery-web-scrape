@@ -2,10 +2,12 @@
 import urllib2
 
 #import the Beautiful soup functions to parse the data returned from the website
+import os
 from bs4 import BeautifulSoup
 
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
+import urllib
 
 import csv
 
